@@ -1,0 +1,225 @@
+// BLOG HEADER STYLING BEGINS
+
+.hero-blog {
+    background-image: url(/assets/blog-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+
+    h1 {
+        text-transform: uppercase;
+        color: $white;
+        margin: 10% 0% 10% 5%;
+    }
+}
+
+.blog-page {
+    display:flex;
+    flex-wrap: wrap;
+    background-color: $lightblue;
+}
+
+// BLOG SIDEBAR STYLING BEGINS
+
+
+.sidebar {
+    width: 30%;
+    padding-top: 10%;
+
+    .side-text {
+        margin-left: 20%;
+        padding: 0 0 5% 5%;
+        width: 80%;
+        background: $blue;
+    }
+
+    h4 {
+        @include font (1.5rem, left);
+        text-transform: uppercase;
+        color: $yellow;
+        letter-spacing: 0.8px;
+        line-height: 58px;
+    }
+
+    li a, p {
+        font-size: 1rem;
+        line-height: 28px;
+        letter-spacing: 1px;
+        color: $white;
+    }
+
+    span {
+        color: $white;
+        display: flex;
+    }
+
+    .text-top {
+        padding-bottom: 15%;
+    }
+
+    .recent-posts {
+
+        li::before{
+            content: "•"; color: $white;
+            display: inline-block;
+            width: 5%;
+            margin-left: 1%;
+            font-size: 1rem;
+        }
+    }
+}
+
+.side-image {
+    width: 410px;
+    position: relative;
+    z-index: 10;
+    top: -15px;
+    right: 110px;
+}
+
+// BLOG POST STYLING BEGINS
+
+
+.blog-post {
+    position: relative;
+    margin-left: 40%;
+    margin-top: -80%;
+    
+
+    h2 {
+        font-size: 2.8rem;
+        text-transform: uppercase;
+        color: $blue;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 28px;
+        letter-spacing: 1px;
+        color: $blue;
+    }
+}
+
+.blog-image {
+    width: 100%;
+    position: relative;
+
+    img {
+        box-shadow: -35px 35px 1px -15px $yellow;
+    }
+}
+
+
+.blog-info {
+    position: absolute;
+    padding: 2% 10% 15% 15%;
+    font-family: $secondfont;
+    border-left: 5px solid $yellow;
+    border-bottom: 5px solid $yellow;
+    
+    p {
+        color: $black;
+    }
+    
+}
+
+.blog-top {
+    // position: absolute;
+    bottom: 250px;
+    padding-bottom: 8%;
+    left: 5%;
+    padding-top: 10%;
+    
+    
+}
+
+
+// BLOG COMMENT STYLING BEGINS
+
+.blog-comments {
+    width: 50%;
+    margin-left: 40%;
+    margin-top: 40%;
+
+    h3 {
+        text-transform: uppercase;
+        color: $blue;
+        padding-bottom: 10%;
+        padding-left: 10%;
+    }
+
+    h4 {
+        font-family: $secondfont;
+        color: $blue;
+        font-weight: 700;
+        font-size: 1rem;
+        margin-top: -4%;
+    }
+
+    p{
+        font-family: $secondfont;
+
+    }
+}
+
+.comment {
+    display: flex;
+    flex-direction: row;
+    padding: 0% 0% 10% 10%;
+}
+
+.comment-image,
+.comment-image2 {
+    width: 50%;
+    margin-right: 5%;
+}
+
+// BLOG FORM STYLING BEGINS
+
+.contact-form {
+    width: 60%;
+    margin-left: 45%;
+    margin-top: 3%;
+}
+
+.name,
+.email {
+    width: 40%;
+    padding: 2%;
+    border: none;
+    font-family: $secondfont;
+    color: $black;
+    // Why does the font color take every other color apart from black?
+    background: $lightblue;
+    border-bottom: 2px solid $yellow;
+}
+
+.name {
+    margin-right: 5%;
+}
+
+.submit {
+    margin: 10% 0 8% 0;
+    padding: 1% 0;
+    width: 85%;
+    border: 2px solid $yellow;
+    text-transform: uppercase;
+    font-family: $mainfont;
+    font-size: 1.2rem;
+    // line-height: 41.6px;
+    color: $yellow;
+    background: $blue;
+}
+
+textarea {
+    width: 85%;
+    padding: 5% 0% 20% 10%;
+    margin-top: 5%;
+    background: $lightblue;
+    font-family: $secondfont;
+    border: 2px solid $yellow;
+    display: flex;
+    font-weight: 300;
+    resize: none;
+}

@@ -1,0 +1,155 @@
+// SITE STYLING DEFAULTS
+
+*  {
+    padding: 0;
+    margin: 0;  
+}
+
+html {
+    font-size: 125%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.wrapper {
+    margin: 0 auto;  
+    width: 90%;    
+    max-width: 1600px;
+}
+
+img {
+    width: 100%;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+// FONT LEGEND
+
+    // font-family: 'IM Fell English', serif;
+    // font-family: 'Roboto', sans-serif;
+
+
+
+    // COLOR LEGEND  
+
+    // color: #eafefc; (Icy blue)
+    // color: #fdd908; (Dandelion)
+    // color: #0d457f; (Twilight Blue)
+    // color: #ffffff; (White)
+
+.btn {
+    background: $yellow;
+    color: $blue;
+    font-family: $mainfont;
+    @include font (1.2rem, center);
+    line-height: 41.6px;
+}
+
+.btn1:hover {
+    background: $white;
+    color: $blue;
+    transition: color 2s ease;
+}
+
+.btn2:hover {
+    background: $lightblue;
+    color: $blue;
+    transition: color 2s ease;
+}
+
+.btn1 {
+    padding: 1.5% 3%;
+}
+    
+.btn2 {
+    padding: 2% 4%;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 28px;
+    font-family: $secondfont;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-family: $mainfont;
+    font-size: 4.9rem;
+}
+
+h2 {
+    font-family: $mainfont;
+    font-size: 2.5rem;
+    line-height: 99.8px;
+}
+
+h3 {
+    font-family: $mainfont;
+    font-size: 2rem;
+    line-height: 58px;
+    letter-spacing: 1.3px;
+}
+
+h4 {
+    font-family: $mainfont;
+    font-size: 1.5rem;
+    line-height: 58px;
+    letter-spacing: 0.8px;
+}
+
+footer {
+    @include font (0.5rem, center);
+    background: $yellow ;
+    color: $blue;
+    position: relative;
+    padding: 0.5% 0;
+    margin-top: 0%;
+}
+
+.skip-link {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: #FFF;
+    color: #000;
+}
+
+.skip-link:focus {
+    left: 0;
+}
+
+.visually-hidden:not(:focus):not(:active) { 
+	position: absolute; 
+	width: 1px; 
+	height: 1px; 
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(00 0 0);
+	overflow: hidden;
+}
+
+// BASIC MEDIA QUERIES BEGIN
+
+@media (max-width:320px) {
+    h2 {
+        font-size: 2rem;
+    }
+    p, .btn, .btn1, .btn2 {
+        font-size: 0.8rem;
+    }
+}

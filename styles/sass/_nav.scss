@@ -1,0 +1,156 @@
+// NAV STYLES
+
+.hero-nav {
+    display: flex;
+    justify-content: flex start;
+    padding: 2% 5% 2% 0%;
+    letter-spacing: 1.3px;
+
+}
+
+.hero-nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 1.5% 0 0 0;
+    width: 35vw;
+}
+
+.nav a {
+    font-family: $secondfont;
+    font-weight: 700;
+    line-height: 41.6px;
+    color: $white;
+    padding: 5px 0;
+    letter-spacing: 1px;
+    transition: color 1s ease-out, border-bottom 1s ease-out;
+    border:none;
+    border-bottom: 2px solid transparent;
+
+    // @include font (1.25rem, center);
+
+    &:hover {
+        color: $yellow;
+        border-bottom: 2px solid $yellow;
+        transition: color 1s ease-in, border-bottom 1s ease-in;
+    }
+}
+
+.hamburger, .toggle-menu {
+    display: none;
+}
+
+// MEDIA QUERIES
+
+        @media (max-width: 1300px) {
+
+            .hero-nav ul {
+                font-size: 1.5rem;
+                padding: 0%;
+            }
+        }
+
+        @media (max-width: 1000px) {
+
+            .hero-nav ul {
+                // padding-left: 15%;
+            }
+        }
+
+        @media (max-width: 900px) {
+
+            .hero-nav ul {
+                padding: 2.3% 0 0 0%;
+                
+                li {
+                    padding: 0 6%;
+                }
+            }
+        }
+
+        // HAMBURGER MENU INSPIRATION FROM: 
+        // CSS Tips & Tricks #4 - CSS Only Dropdown Menu
+        // https://www.youtube.com/watch?v=POxn1x3kAyY
+        
+        @media (max-width: 750px) {
+
+            input[type=checkbox], .hero-nav ul {
+                display: none;
+            }
+
+            input[type=checkbox]:checked ~ ul {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                right: 30px;
+                top: 50px;
+                text-align: end;
+            }   
+
+            .hero-nav ul li {
+                padding: 5% 0;
+
+                a {
+                color: $yellow;
+                }
+
+                a:hover {
+                color: $lightblue;
+                }
+            }
+
+            .hero-nav input#toggle + label {
+                display: block;
+                width: 20%;
+                height: 30px;
+                position: absolute;
+                right: 0;
+                top: auto;
+                cursor: pointer;
+                z-index: 10;
+            }
+
+            .hamburger {
+                display: flex;
+                justify-content: flex-end;
+                
+                i  {
+                    font-size: 2.2rem;
+                    color: $yellow;
+                    position: absolute;
+                    top: 30px;
+                    right: 30px;
+                }
+
+                i:hover {
+                    color: $blue;
+                    transition: color 2s ease;
+                }
+            }
+        }
+
+        @media (max-width: 400px) {
+
+            input[type=checkbox], .hero-nav ul {
+                display: none;
+            }
+            
+            input[type=checkbox]:checked ~ ul {
+                flex-direction: row;
+                position: absolute;
+                right: 110px;
+                top: 10px;
+                text-align: end;
+            }   
+
+            .hero-nav ul li {
+                padding: 0 3%;
+            }
+
+            .hero-nav a {
+                font-size: 0.6rem;
+            }
+        }
+        
+
+        

@@ -1,0 +1,112 @@
+// HEADER STYLING BEGINS
+
+header {
+    background-image: url(/assets/contact-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+}
+
+span.contact-text {
+    text-transform: uppercase;
+    color: $white;
+    font-size: 4rem;
+}
+
+.contact-page {
+    position: relative;
+}
+
+.contact-top {
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    width: 50%;
+    padding-top: 5%;
+}
+
+
+// FORM STYLING BEGINS
+
+.contact-bottom {
+    position: relative;
+    background-color: $lightblue;
+
+}
+
+.contact-form2 {
+    background-color: $blue;
+    padding-bottom: 0;
+    width: 60%;
+    margin-left: 35%;
+    // margin-top: 5%;
+    padding: 2%;
+    position: relative;
+    bottom: 250px;
+    box-shadow: 35px 35px 1px -15px $yellow;
+
+        .name, 
+        .email {
+            font-family: $secondfont;
+            background: $blue;
+            color: $white;
+        }
+
+        textarea {
+            font-family: $secondfont;
+            background: $blue;
+            color: $white;
+            padding: 3%;
+            margin-left: 8%;
+        }
+
+        .submit {
+            margin: 5% 5% 5% 5%;
+            width: 90%;
+            background-color: $yellow;
+            color: $blue;
+        }
+}
+
+.email2 {
+    margin: 5% 0;
+    color: $black;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    font-family: $secondfont;
+}
+
+// .email2:hover {
+//     color: $yellow;
+//     transition: color 2s ease;
+// }
+
+// ICONS STYLING BEGINS
+
+.icons-contact i {
+    color: $blue;
+}
+
+.icons-contact i:hover,
+.submit:hover,
+.email2 {
+    color: $yellow;
+    transition: color 2s ease;
+}
+
+.bottom-text {
+    position: absolute;
+    top: 25%;
+    width: 30%;
+    margin-left: 10%;
+    color: $black;
+    font-size: 1.3rem;
+    font-family: $secondfont;
+}
+
+.icons-contact ul {
+    display: flex;
+    justify-content: space-between;
+    width: 37%;
+}

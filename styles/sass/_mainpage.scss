@@ -1,0 +1,491 @@
+// HEADER SECTION BEGINS
+
+.hamburger {
+    display: none;
+}
+.header-main {
+    background-image: url(/assets/home-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 95vh;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero-text {
+    color: $yellow;
+    // z-index: 10;
+    margin-top: 400px;
+    margin-left: 20px;
+    text-transform: uppercase;
+
+}
+
+.hero-top {
+    margin-right: 50vw;
+}
+
+.overlap {
+    background-image: url(/assets/home-box-header.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    height: 80vh;
+    width: 50%;
+    position: absolute;
+    top: 220px;
+    right: 0;
+}
+
+// OVERVIEW SECTION BEGINS
+
+.overview {
+    background: $lightblue;
+    
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 10% 5.5% 6% 10%;
+    }
+}
+
+.feature {
+    width: calc(50% - 2.5%);
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 4%;
+
+    h3 {
+        padding: 4% 0;
+    }
+}
+
+.flex-feature {
+    display: flex;
+    flex-direction: column;
+}
+
+.feature i::before {
+    background: $yellow;
+    border-radius: 50%;
+    padding: 20px;
+    width: 50%;
+    display: block;
+}
+
+.feature i {
+    margin-right: 2.5%;
+    font-size: 1.8rem;
+}
+
+// INFO TEXT SECTION BEGINS
+
+.content {
+    display: flex;
+    background-color: $blue;
+
+    h3 {
+        color: $white;
+    }
+
+    p {
+        font-family: $secondfont;
+        margin: 3% 0 6% 0;
+        color: $white;
+    }
+
+    .content-half-image,
+    .content-half-text2 {
+        width: 42%;
+        margin-right: 8%;
+    }
+
+    .content-half-text {
+        padding: 5% 10% 2% 0;
+    }
+
+    .content-half-text2 {
+        padding: 5% 0% 2% 10%;
+        text-align: right;
+    }
+
+    .content-half-text,
+    .content-half-image2 {
+        width: 42%;
+        margin-left: 8%;
+    }
+
+    .content-half-image {
+        position: relative;
+        bottom: 50px;
+    }
+
+    .content-half-image2 {
+        position: relative;
+        top: 50px;
+    }
+
+    .content-half-image img {
+        box-shadow: 35px 35px 1px -15px $yellow;
+    }
+
+    .content-half-image2 img {
+        box-shadow: -35px 35px 1px -15px $yellow;
+    }
+}
+
+// INTRO TEXT SECTION BEGINS
+
+.intro-text {
+    background: $lightblue;
+    padding: 10% 12%;
+    text-align: center;
+    display: block;
+    
+    h2 {
+        @include font (2rem, center);
+        text-transform: uppercase;
+        line-height: 99.8px;
+    }
+
+    p{
+        margin-bottom: 5%;
+    }
+
+    .btn1 {
+        @include font (1.4rem, center);
+        
+    }
+}
+
+// IMAGE SECTION BEGINS
+
+.shore-image {
+    background-image: url(/assets/banner.jpg);
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+// WIN TRIP SECTION BEGINS
+
+.win-trip {
+    background: $lightblue;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    padding: 10%;
+
+    h2 {
+        @include font (2rem, left);
+        text-transform: uppercase;
+        margin-left: 10%;
+    }
+
+    p {
+        margin: 2% 0 0 10%;
+        padding-bottom: 2.5%;
+    }
+
+    .btn1 {
+        margin: 2% 0 0 10%;
+
+    }
+}
+
+.trip-image {
+    width: 150%;
+    padding: 0;
+    margin: 3% 0 0 0;
+}
+
+.trip-image img {
+    box-shadow: -30px 30px 1px -15px $yellow;
+}
+
+// GALLERY SECTION BEGINS
+
+.gallery {
+    padding: 0% 10%;
+    background-color: $blue;
+}
+
+.gallery img {
+    padding: 9% 3%;
+}
+
+.gallery-images ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+// MEDIA QUERIES BEGIN
+
+    
+        @media (max-width: 1300px) {
+            
+            // HEADER SECTION
+
+            .header-main {
+                height: 85vh;
+            }
+
+            .hero-text h1 {
+                font-size: 4.8rem;
+            }
+
+            .overlap {
+                height: 90vh;
+                width: 70%;
+            }
+
+            
+            // WIN TRIP SECTION
+
+            .win-trip {
+                height: 60vh;
+            
+                h2 {
+                    font-size: 2rem;
+                    }
+            
+            }
+        }
+
+        @media (max-width: 1090px) {
+
+                // HEADER SECTION
+
+                .overlap {
+                    height: 90vh;
+                    width: 60%;
+                }
+
+        }
+
+        @media (max-width: 800px) {
+
+            // HEADER SECTION
+                
+                .header-main {
+                    height: 70vh;
+                }
+
+                .hero-text h1 {
+                    padding-left: 5%;
+                    font-size: 4rem;
+                    line-height: 80px;
+                } 
+
+                .intro-text h2 {
+                font-size: 2rem;
+                }
+
+                .overlap {
+                    display: none;
+                }
+            
+
+            // OVERVIEW SECTION
+
+                .overview {
+                padding: 8% 0 5% 0 ;
+                }
+
+                .feature {
+                    width: 100%;
+                    flex-direction: column;
+                    margin-bottom: 5%;
+                    text-align: center;
+                    padding: 0 10%;   
+                }
+
+                .feature i::before {
+                    width: 8%;
+                    margin: 0 auto;
+                }
+
+            // INFO TEXT SECTION
+
+            .content {
+                display: flex;
+                flex-direction: column;
+
+                .content-half-image,
+                .content-half-image2,
+                .content-half-text,
+                .content-half-text2 {
+                    position: static;
+                    width: 100%;
+                }
+
+                .content-half-image img,
+                .content-half-image2 img {
+                    box-shadow: none;
+                    border: 4px solid $yellow;
+                    padding: 10px;
+                }
+
+                .content-half-text,
+                .content-half-image2 {
+                    margin-left: 0;
+                }
+
+                .content-half-text,
+                .content-half-text2 {
+                    text-align: center;
+                    padding: 0 5%;
+                    margin: 0% 0 5% 0;
+                }
+
+                .content-half-text2 {
+                    padding-top: 6%;
+                }
+
+                .content-half-image {
+                margin-bottom: 8%;
+                }
+            }
+
+            .content2 {
+                flex-direction: column-reverse;
+            }
+
+            // WIN-TRIP SECTION
+
+                .win-trip {
+                    height: 80vh;
+                    flex-direction: column;
+                    padding-top: 5%;
+                    text-align: center;
+                    
+                    .trip-image {
+                        width: 40%;
+                        margin: 0 auto;
+                    }
+
+                    h2 {
+                        padding-top: 5%;
+                        text-align: center;
+                    }    
+                    
+                    p {
+                        text-align: center;
+                    }    
+                }
+            }
+
+        @media (max-width: 320px) {
+
+            // HEADER SECTION
+
+            .header-main {
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 60vh;
+
+                .hero-text h1 {
+                    font-size: 2.2rem;
+                    height: 45vh;
+                }
+            }
+
+            .overlap {
+                display: none;
+            }
+
+            
+            // OVERVIEW SECTION
+
+            .overview {
+                padding: 5% 0 0 0;
+            }
+
+            .feature {
+                padding: 4% 0 2.5% 0;
+            }
+
+            .feature i::before {
+                width: 14%;
+            }
+
+            // INTRO SECTION BEGINS
+
+            .intro-text {
+                height: 60vh;
+                padding-top: 5%;
+                text-align: center;
+                
+
+                h2 {
+                    font-size: 1.2rem;
+                    padding-top: 5%;
+                    text-align: center;
+                }    
+                
+                p {
+                    font-size: 0.8rem;
+                    text-align: center;
+                } 
+            }   
+
+            
+            // IMAGE SECTION BEGINS
+
+            .shore-image {
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 30vh;                
+            }
+            
+            // WIN-TRIP SECTION
+
+            .win-trip {
+                height: 80vh;
+                flex-direction: column;
+                padding-top: 5%;
+                text-align: center;
+                
+                .trip-image {
+                    width: 50%;
+                    margin: 0 auto;
+                }
+
+                h2 {
+                    font-size: 1.5rem;
+                    padding-top: 5%;
+                    text-align: center;
+                }    
+                
+                p {
+                    font-size: 0.8rem;
+                    text-align: center;
+                } 
+            }   
+            
+            // GALLERY SECTION
+
+            .gallery {
+                padding: 0;
+                
+                ul {
+                    flex-direction: column;
+                }
+
+                .gallery-images img {
+                    padding: 5%;
+                }
+            }
+
+            // FOOTER SECTION
+
+            footer p {
+                font-size: 0.9rem;
+            }
+        }

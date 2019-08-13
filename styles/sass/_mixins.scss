@@ -1,0 +1,7 @@
+// MEDIA QUERIES MIXINS
+
+@mixin font ($font-size, $text-align) {
+    font-size: $font-size;
+    text-align: $text-align;
+}
+

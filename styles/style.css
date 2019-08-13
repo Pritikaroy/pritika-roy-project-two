@@ -280,11 +280,13 @@ a {
 }
 
 .btn1 {
-  padding: 1.5% 3%;
+  padding: 1.5% 1% 1.5% 1%;
+  text-transform: uppercase;
 }
 
 .btn2 {
   padding: 2% 4%;
+  text-transform: uppercase;
 }
 
 p {
@@ -375,7 +377,7 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 95vh;
+  height: 80vh;
 }
 
 .hero {
@@ -384,8 +386,9 @@ footer {
 
 .hero-text {
   color: #fdd908;
-  margin-top: 400px;
-  margin-left: 20px;
+  z-index: 10;
+  margin-top: 350px;
+  margin-left: 80px;
   text-transform: uppercase;
 }
 
@@ -394,14 +397,12 @@ footer {
 }
 
 .overlap {
-  background-image: url(/assets/home-box-header.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
-  height: 80vh;
-  width: 50%;
+  width: 59%;
   position: absolute;
-  top: 220px;
+  top: 200px;
   right: 0;
 }
 
@@ -415,7 +416,11 @@ footer {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 10% 5.5% 6% 10%;
+  padding: 10% 5% 5% 10%;
+}
+
+.overview {
+  background-color: #eafefc;
 }
 
 .feature {
@@ -427,11 +432,13 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding-bottom: 4%;
+  padding: 5% 0 4% 0%;
 }
 
-.feature h3 {
-  padding: 4% 0;
+.feature h2 {
+  text-transform: uppercase;
+  color: #0d457f;
+  margin-top: -2.5%;
 }
 
 .flex-feature {
@@ -447,7 +454,7 @@ footer {
 .feature i::before {
   background: #fdd908;
   border-radius: 50%;
-  padding: 20px;
+  padding: 18px;
   width: 50%;
   display: block;
 }
@@ -455,23 +462,23 @@ footer {
 .feature i {
   margin-right: 2.5%;
   font-size: 1.8rem;
+  color: #0d457f;
 }
 
-.info-text .wrapper {
+.info-text, .wrapper {
+  width: 100%;
+}
+
+.content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  background-color: #fdd908;
+  background-color: #0d457f;
 }
 
 .content h3 {
   color: #ffffff;
+  text-transform: uppercase;
 }
 
 .content p {
@@ -531,6 +538,7 @@ footer {
 .intro-text h2 {
   font-size: 2rem;
   text-align: center;
+  color: #0d457f;
   text-transform: uppercase;
   line-height: 99.8px;
 }
@@ -569,11 +577,12 @@ footer {
   font-size: 2rem;
   text-align: left;
   text-transform: uppercase;
+  color: #0d457f;
   margin-left: 10%;
 }
 
 .win-trip p {
-  margin: 2% 0 0 10%;
+  margin: 0% 0 0 10%;
   padding-bottom: 2.5%;
 }
 
@@ -614,14 +623,8 @@ footer {
           justify-content: space-between;
 }
 
+​
 .hero-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: flex start;
-      -ms-flex-pack: flex start;
-          justify-content: flex start;
-  padding: 2% 5% 2% 0%;
   letter-spacing: 1.3px;
 }
 
@@ -633,7 +636,7 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0;
-  padding: 1.5% 0 0 0;
+  padding: 4% 0 0 8%;
   width: 35vw;
 }
 

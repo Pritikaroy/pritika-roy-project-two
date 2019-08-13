@@ -1,18 +1,14 @@
 // NAV STYLES
-
+​
 .hero-nav {
-    display: flex;
-    justify-content: flex start;
-    padding: 2% 5% 2% 0%;
     letter-spacing: 1.3px;
-
 }
 
 .hero-nav ul {
     display: flex;
     justify-content: space-between;
     margin: 0;
-    padding: 1.5% 0 0 0;
+    padding: 4% 0 0 8%;
     width: 35vw;
 }
 
@@ -26,8 +22,6 @@
     transition: color 1s ease-out, border-bottom 1s ease-out;
     border:none;
     border-bottom: 2px solid transparent;
-
-    // @include font (1.25rem, center);
 
     &:hover {
         color: $yellow;

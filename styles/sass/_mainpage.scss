@@ -8,7 +8,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 95vh;
+    height: 80vh;
 }
 
 .hero {
@@ -17,9 +17,9 @@
 
 .hero-text {
     color: $yellow;
-    // z-index: 10;
-    margin-top: 400px;
-    margin-left: 20px;
+    z-index: 10;
+    margin-top: 350px;
+    margin-left: 80px;
     text-transform: uppercase;
 
 }
@@ -29,14 +29,13 @@
 }
 
 .overlap {
-    background-image: url(/assets/home-box-header.png);
+    // background-image: url(/assets/home-box-header.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
-    height: 80vh;
-    width: 50%;
+    width: 59%;
     position: absolute;
-    top: 220px;
+    top: 200px;
     right: 0;
 }
 
@@ -46,17 +45,23 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 10% 5.5% 6% 10%;
+    padding: 10% 5% 5% 10%;
+}
+
+.overview {
+    background-color: $lightblue;
 }
 
 .feature {
     width: calc(50% - 2.5%);
     display: flex;
     flex-direction: row;
-    padding-bottom: 4%;
+    padding: 5% 0 4% 0%;
 
-    h3 {
-        padding: 4% 0;
+    h2 {
+        text-transform: uppercase;
+        color: $blue;
+        margin-top: -2.5%;
     }
 }
 
@@ -68,29 +73,31 @@
 .feature i::before {
     background: $yellow;
     border-radius: 50%;
-    padding: 20px;
+    padding: 18px;
     width: 50%;
     display: block;
 }
 
 .feature i {
+    // margin-top: -1.5%;
     margin-right: 2.5%;
     font-size: 1.8rem;
+    color: $blue;
 }
 
 // INFO TEXT SECTION BEGINS
 
-.info-text .wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: $yellow;
+.info-text, .wrapper {
+    width: 100%;     
 }
     
 .content{
+    display: flex;
+    background-color: $blue;
 
     h3 {
         color: $white;
+        text-transform: uppercase;
     }
 
     p {
@@ -149,6 +156,7 @@
     
     h2 {
         @include font (2rem, center);
+        color: $blue;
         text-transform: uppercase;
         line-height: 99.8px;
     }
@@ -158,8 +166,7 @@
     }
 
     .btn1 {
-        @include font (1.4rem, center);
-        
+        @include font (1.4rem, center);        
     }
 }
 
@@ -185,11 +192,12 @@
     h2 {
         @include font (2rem, left);
         text-transform: uppercase;
+        color: $blue;
         margin-left: 10%;
     }
 
     p {
-        margin: 2% 0 0 10%;
+        margin: 0% 0 0 10%;
         padding-bottom: 2.5%;
     }
 

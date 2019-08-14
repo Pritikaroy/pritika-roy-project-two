@@ -55,18 +55,19 @@ a {
     font-family: $mainfont;
     @include font (1.2rem, center);
     line-height: 41.6px;
+    transition: color 2s ease-out, 2s ease-out;
 }
 
 .btn1:hover {
     background: $white;
     color: $blue;
-    transition: color 2s ease;
+    transition: color 2s ease-in, 2s ease-in;
 }
 
 .btn2:hover {
     background: $lightblue;
     color: $blue;
-    transition: color 2s ease;
+    transition: color 2s ease-in, 2s ease-in;
 }
 
 .btn1 {
@@ -151,6 +152,7 @@ footer {
 // BASIC MEDIA QUERIES BEGIN
 
 @media (max-width:320px) {
+    
     h2 {
         font-size: 2rem;
     }
